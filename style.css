@@ -1,0 +1,325 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(/Font/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: "Pixel Regular";
+    src: url(/Font/PixelifySans-VariableFont_wght.ttf);
+    font-weight: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Pixel Regular; 
+    color:white;
+    scroll-behavior:smooth; /*para una bajada a los titulos más suaves*/
+    
+
+}
+
+iframe{
+
+    padding-left: 10%;
+    width: 100%;
+    height: 300px;
+}
+
+body {
+    background-color: black;
+    
+}
+
+aside {
+    margin-top: 20vh;
+    color: #ffffff;
+    padding-left: 1%;
+    position: fixed;
+    z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 1%;
+}
+nav ul img{
+width: 25px;
+margin: 40% 2px;
+}
+
+    nav ul p {
+    font-size: 12px;       
+    color: rgba(255, 255, 255, 0.274); 
+    }
+
+    nav ul li {
+        width: 100%;
+        display:list-item;
+        margin-right: 20px;
+        margin-bottom: 3%;
+        font-family: Pixel Bold; 
+        font-size: 1.2rem;
+        padding-bottom:20%;
+
+    }
+        nav ul li a {
+            text-decoration: none;
+            position: relative;
+            width: 100%;
+        }
+        
+        nav ul li a:hover::after {
+            content: " _";
+        }
+
+.seccion{
+    margin: 1% 0%;
+    border: 1px solid rgba(183, 183, 189, 0.973);
+    padding: 100px 10%;
+    max-width: 1120px;
+    min-height: 100vh;
+    width: 78vw;
+    margin-left: 12vw;
+    box-shadow: 1px 1px 16px rgba(186, 186, 41, 0.403); /* Sombra en el lado derecho y debajo para simular el grosor del libro */
+
+}
+
+.seccion:nth-child(1){
+    margin-left: -90px !important;
+}
+
+h1{
+    display:inline;
+    color:white;
+    background-color: rgba(44, 40, 40, 0.411);
+    font-family: Roboto;
+    font-size: 4rem;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: rgba(236, 235, 235, 0.548);
+    position: relative;
+    display: inline-block;
+}
+#inicio {
+    margin-top: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+#inicio H2{
+    background-color: rgba(255, 255, 255, 0.041);
+    font-size: 2rem;
+    margin-top: 0.5%;
+    display: inline-block;
+}
+
+
+.tags p{
+    font-family: Roboto;
+    display: block;
+    margin-top: 12%;
+}
+
+
+#sobre-mi img{
+    image-resolution: 30x30;
+    max-width: 35%;
+    filter: grayscale(80%);
+    float: right;
+    border-radius: 30px;
+    margin-right: 10%;
+}
+
+#sobre-mi {
+    background-color: #506d1281;
+}
+
+#proyectos {
+    background-color: #217373;
+}
+
+#CVresumido {
+    background-color: #173540;
+}
+
+#contacto {
+    background-color: #8d8d6f38;
+}
+
+
+.cuerpo1{
+    margin-right: 50%;
+}
+.cuerpo2{
+    margin-left: 50%;
+}
+
+
+
+.proyecto h3{
+    margin-top: 8% ;
+    background-color: rgba(0, 0, 0, 0.342);
+    font-family: Roboto;
+    padding-left: 8px;
+
+}
+.proyecto{
+    border-left: 2px solid rgba(0, 0, 0, 0.342);
+}
+
+.proyecto img{
+    margin-left: 5%;
+    padding: 5px;
+    width: 15%;
+    border: 3px solid rgb(224, 224, 224);
+    
+}
+
+.proyecto div {
+    padding: 10px;
+    display: inline-flex; 
+    width: 100%; 
+    align-items: center;
+    padding-left: 2%;
+    
+}
+
+.proyecto div div{
+    padding-top: 10px; 
+    width: auto;
+    margin-left: 10px;
+    
+}
+.proyecto div p{
+    width: 50%; 
+    font-family: Roboto;
+}
+.proyecto div p img{
+    width: 100px; 
+    height: 100px;
+    font-family: Roboto;
+
+}
+
+.proyecto-lista a {
+
+    font-family: Roboto;
+    padding: 0 10px;
+
+}
+
+.uno{
+    font-size:xx-large;
+}
+
+span{
+    font-size: 14px;;
+}
+
+.iframe{
+    height: 400px;
+
+}
+
+.form {
+    width: 100%;
+    font-family: roboto;
+    padding: 8px;
+    color:black;
+}
+
+.form:nth-child(1){
+    margin-bottom: 2%;
+}
+
+.formbtn {
+    width: 20%;
+    color:black;
+    
+
+}
+
+
+   
+
+
+    .contenido {
+        margin-top: 2%;
+        border-left: 1px solid rgb(202, 196, 196) ;
+        
+    }
+
+    .info-contacto {
+        margin-bottom: 20px;
+    }
+    .info-contacto p {
+        margin-bottom: 5px;
+    }
+    .trabajo,
+    .educacion {
+        
+        margin-left: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        
+    }
+
+    .trabajo p{
+        font-family: roboto;
+    }
+    
+
+    .trabajo h3,
+    .educacion h3 {
+        font-family: roboto;
+        margin-bottom: 5px;
+    }
+
+    .trabajo p,
+    .educacion p {
+        margin: 0;
+        font-family: roboto;
+
+    }
+
+
+
+
+
+
+
+/* Elemento obtenido de internet para dar dinamismo a la web*/
+
+h2::after {
+    content: '_'; /* Contenido del pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto con respecto al h2 */
+    top: 10%; /* Coloca el pseudo-elemento en el centro verticalmente */
+    left: calc(100% + 5px); /* Coloca el pseudo-elemento justo al lado derecho del h2 */
+    opacity: 1; /* Asegura que el guion bajo esté visible */
+    animation: titilar 0.7s infinite alternate; /* Animación para hacer titilar el guion bajo */
+}
+
+@keyframes titilar {
+    from {
+        opacity: 1; /* Opacidad inicial */
+    }
+    to {
+        opacity: 0.1; /* Opacidad final */
+    }
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
