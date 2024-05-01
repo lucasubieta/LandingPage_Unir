@@ -16,7 +16,7 @@
     box-sizing: border-box; 
     font-family: Pixel Regular; 
     color:white;
-    scroll-behavior:smooth; /*Encontré este codigo para cambiar suavemente entre los ID de la web*/
+    scroll-behavior:smooth; /*para una bajada a los titulos más suaves*/
     
 
 }
@@ -38,6 +38,7 @@ aside {
     color: #ffffff;
     padding-left: 1%;
     position: fixed;
+    z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
 }
 
 nav ul {
@@ -70,11 +71,10 @@ margin: 40% 2px;
             width: 100%;
         }
         
-        nav ul li a:hover::after { /* Agrega el _ cuando se situa el cursor sobre un enlace*/
+        nav ul li a:hover::after {
             content: " _";
         }
 
-        
 .seccion{
     margin: 1% 0%;
     border: 1px solid rgba(183, 183, 189, 0.973);
@@ -83,7 +83,7 @@ margin: 40% 2px;
     min-height: 100vh;
     width: 78vw;
     margin-left: 12vw;
-    box-shadow: 1px 1px 16px rgba(186, 186, 41, 0.403); 
+    box-shadow: 1px 1px 16px rgba(186, 186, 41, 0.403); /* Sombra en el lado derecho y debajo para simular el grosor del libro */
 
 }
 
@@ -295,55 +295,9 @@ span{
 
 
 
-/* RESPONSIVE PARA PANTALLAS HASTA 576 */
-@media only screen and (max-width: 576px) {
-    aside {
-        margin-top: 10vh; 
-    }
-    nav ul li {
-        font-size: 1rem; 
-        padding-bottom: 10%; 
-    }
-}
-
-/* RESPONSIVE PARA PANTALLAS HASTA 992 Y MAYORES QUE 576px */
-@media only screen and (max-width: 992px) {
-    .seccion {
-        padding: 50px 5%; 
-        width: 90%; 
-        margin-left: 5%; 
-    }
-    .cuerpo1,
-    .cuerpo2 {
-        margin-right: 0; 
-        margin-left: 0; 
-    }
-    #sobre-mi img {
-        max-width: 100%; 
-        margin-right: 0; 
-        float: none; 
-    }
-    .proyecto img {
-        margin-left: 0;
-        width: 100%; 
-    }
-    .proyecto div {
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
-    .proyecto div p {
-        width: 100%; 
-    }
-    .formbtn {
-        width: 40%; 
-    }
-}
 
 
-
-
-
-/* Elemento obtenido de internet para darle un poco de movimiento a la web*/
+/* Elemento obtenido de internet para dar dinamismo a la web*/
 
 h2::after {
     content: '_'; /* Contenido del pseudo-elemento */
