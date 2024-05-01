@@ -1,11 +1,11 @@
 @font-face{
     font-family: "Roboto";
-    src: url(/Font/RobotoCondensed-VariableFont_wght.ttf);
+    src: url(Font/RobotoCondensed-VariableFont_wght.ttf);
 }
 
 @font-face{
     font-family: "Pixel Regular";
-    src: url(/Font/PixelifySans-VariableFont_wght.ttf);
+    src: url(Font/PixelifySans-VariableFont_wght.ttf);
     font-weight: normal;
 }
 
@@ -74,7 +74,7 @@ margin: 40% 2px;
             content: " _";
         }
 
-        
+
 .seccion{
     margin: 1% 0%;
     border: 1px solid rgba(183, 183, 189, 0.973);
